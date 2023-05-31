@@ -1,0 +1,57 @@
+:root {
+  /* font size */
+  font-size: 62.5%;
+
+  /*  colors */
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --blue: #2a4a78;
+
+  /* breakpoints */
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "";
+}
+
+/* buttons and button link */
+.btn {
+  background-color: var(--primary);
+  /* padding: 0.7rem 1rem; */
+  border: 0px;
+  border-radius: 5px;
+}
+
+.btn-link {
+  font-size: 1.6rem;
+  display: block;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-secondary {
+  background-color: var(--secondary);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+}
+
+.btn-warning {
+  background-color: var(--warning);
+}
+
+.btn:hover {
+}
