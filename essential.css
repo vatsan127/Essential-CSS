@@ -1,16 +1,16 @@
 /* Poppins font import */
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
 
 /* Inter Font import */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"); */
 
 :root {
   /* font size */
   font-size: 62.5%;
 
   /* font */
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 
   /*  colors */
   --primary: #007bff;
@@ -36,6 +36,7 @@ body {
 /* buttons */
 .btn {
   background-color: var(--primary);
+  font-size: 16px;
   font-family: inherit;
   padding: 0;
   border: none;
@@ -48,14 +49,13 @@ body {
 /* button link */
 
 .btn-link {
-  /* display: block; */
   font-size: 16px;
   font-family: inherit;
   line-height: 1.5;
   border: none;
   border-radius: 5px;
   user-select: none;
-  padding: 0.75rem 1rem;
+  padding: 0.3rem 0.7rem;
   color: aliceblue;
   /* cursor: pointer; */
   text-decoration: none;
@@ -82,7 +82,13 @@ body {
 
 .btn:hover {
   opacity: 0.7;
+  /* filter: brightness(0.85); */
+  box-shadow: 4px 4px 3px 0px;
 }
+
+.glow {
+}
+
 /* .btn:focus,
 .btn:active {
   border: 1px solid black;
