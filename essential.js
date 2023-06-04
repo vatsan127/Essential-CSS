@@ -11,4 +11,8 @@ function handleExpand() {
 }
 
 toggleBtn.addEventListener("click", handleExpand);
-// window.addEventListener("resize", handleView);
+window.addEventListener("resize", () => {
+  if (navList.classList.contains("expand")) {
+    navList.classList.remove("expand");
+  }
+});
