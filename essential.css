@@ -1,16 +1,12 @@
 /* Poppins font import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
 
-/* Inter Font import */
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"); */
-
 :root {
   /* font size */
   font-size: 62.5%;
 
   /* font */
   font-family: "Poppins", sans-serif;
-  /* font-family: "Inter", sans-serif; */
 
   /*  colors */
   --primary: #007bff;
@@ -22,7 +18,9 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --blue: #2a4a78;
-
+  --darkBlue: #2c3e50;
+  --dark: #7b8a8b;
+  --hover: #18bc9c;
   /* breakpoints */
   --sm: 576px;
   --md: 768px;
@@ -95,10 +93,6 @@ body {
   box-shadow: 0 0 5px 3px var(--danger);
 }
 
-/* container */
-.container {
-}
-
 /* flex */
 .d-flex {
   display: flex;
@@ -124,7 +118,86 @@ body {
   justify-content: center;
 }
 
+.justify-self-end {
+  justify-content: flex-end;
+}
+
 /* align items center */
 .align-items {
   align-items: center;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--darkBlue);
+}
+
+.nav-brand {
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  list-style: none;
+}
+
+.nav-item {
+  color: white;
+  /* font-size: 1.6rem; */
+}
+
+.nav-item:hover {
+  color: var(--hover);
+}
+
+.expand {
+  display: none;
+}
+
+.toggle-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    display: block;
+  }
+  .nav-head {
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-brand {
+    font-size: 2.4rem;
+  }
+  .nav-list {
+    display: none;
+  }
+  .expand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    gap: 1rem;
+    background-color: var(--darkBlue);
+  }
+
+  .toggle-btn {
+    display: inline-block;
+  }
 }
