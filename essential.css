@@ -200,6 +200,15 @@ body {
     gap: 1rem;
     background-color: var(--darkBlue);
   }
+  ul li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  ul li:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  ul li:nth-child(4) {
+    animation-delay: 1s;
+  }
 
   .toggle-btn {
     display: inline-block;
@@ -229,6 +238,15 @@ body {
   animation-timing-function: ease-in;
 }
 
+.animate.animate-slideDown {
+  animation-name: slideDown;
+  animation-timing-function: ease-in;
+}
+.animate.animate-fadeUp {
+  animation-name: fadeUp;
+  animation-timing-function: ease-in;
+}
+
 /* animate */
 @keyframes slideIn {
   from {
@@ -236,5 +254,23 @@ body {
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }
