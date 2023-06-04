@@ -249,10 +249,17 @@ body {
 
 /* animate */
 @keyframes slideIn {
-  from {
+  0% {
     transform: translateX(-300px);
+    opacity: 0;
   }
-  to {
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
     transform: translateX(0);
   }
 }
