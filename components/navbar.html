@@ -6,37 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../img/javascript.svg" />
     <title>NavBar</title>
+
+    <!-- css style sheet -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="nav-head">
-        <a class="nav-brand" href=""> Navbar</a>
-        <button class="toggle-btn">
-          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
-        </button>
-      </div>
-      <ul class="list nav-list animate animate--fast" id="">
-        <li class="nav-item animate animate-slideIn animate--fast">
-          <a class="nav-link" href="" target="_blank">Home</a>
-        </li>
-        <li class="nav-item animate animate-slideIn animate--fast">
-          <a class="nav-link" href="" target="_blank">About</a>
-        </li>
-        <li class="nav-item animate animate-slideIn animate--fast">
-          <a class="nav-link" href="" target="_blank">Feedback</a>
-        </li>
-        <li
-          class="nav-item justify-self-end animate animate-fadeUp animate--fast"
-        >
-          <button class="btn btn-danger">Logout</button>
-        </li>
+    <!-- navbars -->
+    <nav class="navbar">
+      <div class="nav-brand"><a href="#">NavBar</a></div>
+
+      <!-- toggle btn -->
+      <a class="toggle-btn" href="">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
+      </a>
+
+      <!-- nav links -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feedback</a></li>
+
+        <a class="btn btn-danger" href="../index.html"> Back </a>
       </ul>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/d494538c58.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../main.js"></script>
+    </nav>
+
+    <script src="../script.js"></script>
   </body>
 </html>
