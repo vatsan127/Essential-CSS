@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
 
 /* components */
-@import url("./anmations.css");
-@import url("./button.css");
-@import url("./d-flex.css");
-@import url("./navbar.css");
+@import url("./Animations/anmations.css");
+@import url("./components/button/button.css");
+@import url("./components/navbar/navbar.css");
 
 :root {
   /* font size */
