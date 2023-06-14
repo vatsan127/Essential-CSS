@@ -7,14 +7,11 @@
   background-color: var(--darkBlue);
 }
 
-.nav-brand {
-  margin: 1rem;
-}
-
 .nav-head a {
   color: white;
   font-size: 3rem;
   text-decoration: none;
+  margin: 1rem;
 }
 
 .nav-links {
@@ -34,6 +31,7 @@
 .nav-links li:hover {
   backdrop-filter: brightness(0.8);
 }
+
 .nav-links li a {
   color: white;
   text-decoration: none;
@@ -75,7 +73,12 @@
   .bars {
     height: 3px;
     width: 100%;
+    border-radius: 3px;
     background-color: white;
+  }
+
+  .toggle-btn:hover .bars {
+    filter: brightness(0.75);
   }
 
   .nav-links {
