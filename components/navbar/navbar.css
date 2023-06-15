@@ -59,6 +59,10 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid white;
+  }
+
+  .nav-head::after {
   }
 
   .toggle-btn {
