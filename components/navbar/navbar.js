@@ -1,5 +1,5 @@
-const toggleBtn = document.querySelector(".toggle-btn");
-const navLinks = document.querySelector(".nav-links");
+const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+const navLinks = document.getElementsByClassName("nav-links")[0];
 
 function handleToggle() {
   navLinks.classList.toggle("active");
