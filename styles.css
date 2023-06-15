@@ -5,10 +5,7 @@
 @import url("./Animations/anmations.css");
 @import url("./components/button/button.css");
 @import url("./components/navbar/navbar.css");
-
-* {
-  user-select: none;
-}
+@import url("./components/review/review.css");
 
 :root {
   /* font size */
