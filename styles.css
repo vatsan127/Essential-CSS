@@ -6,6 +6,10 @@
 @import url("./components/button/button.css");
 @import url("./components/navbar/navbar.css");
 
+* {
+  user-select: none;
+}
+
 :root {
   /* font size */
   font-size: 62.5%;
