@@ -31,20 +31,20 @@ const data = [
 ];
 
 // buttons selectors
-const nextBtn = document.querySelector(".next-btn");
-const prevbtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".review .next-btn");
+const prevbtn = document.querySelector(".review .prev-btn");
 
 // profile image selector
-const profileImg = document.querySelector(".profile-img");
+const profileImg = document.querySelector(".review .profile-img");
 
 // profile name selector
-const profileName = document.querySelector(".profile-name");
+const profileName = document.querySelector(".review .profile-name");
 
 // profile role selector
-const profileRole = document.querySelector(".profile-role");
+const profileRole = document.querySelector(".review .profile-role");
 
 // profile review selector
-const profileReview = document.querySelector(".profile-review");
+const profileReview = document.querySelector(".review .profile-review");
 
 let counter = 0;
 let reviewDataSize = data.length;
