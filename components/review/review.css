@@ -18,15 +18,6 @@
   box-shadow: 20px 19px 20px 0px grey;
 }
 
-/* .review:hover > div,
-.review:hover > p {
-  filter: blur(5px);
-} */
-
-/* .review:hover .buttons {
-  display: inline-block;
-} */
-
 .review .profile-details {
   display: flex;
   flex-direction: column;
@@ -58,7 +49,12 @@
   text-align: center;
 }
 
-/* .review .buttons {
-  position: absolute;
-  display: none;
-} */
+@media (max-width: 576px) {
+  .review {
+    height: auto;
+  }
+
+  .profile-img {
+    display: none;
+  }
+}
