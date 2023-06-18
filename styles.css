@@ -8,7 +8,7 @@
 @import url("./components/review/review.css");
 @import url("./components/sidebar/sidebar.css");
 
-:root {
+root {
   /* font size */
   font-size: 62.5%;
 
