@@ -25,18 +25,18 @@
 
 @media (min-width: 1000px) {
   .img-tall {
-    height: -webkit-fill-available;
+    height: 650px;
     grid-row: span 2;
   }
 
   .img-wide {
-    width: -webkit-fill-available;
+    width: 490px;
     grid-column: span 2;
   }
 
   .img-large {
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
+    height: 650px;
+    width: 490px;
     grid-column: span 2;
     grid-row: span 2;
   }
