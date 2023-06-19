@@ -1,28 +1,28 @@
 // review data
 const data = [
   {
-    img: "./review-profile-img/naruto.png",
+    img: "../../img/anime-character-img/naruto.png",
     name: "Naruto",
     role: "Vlogger",
     review:
       "The new restaurant in town exceeded my expectations! The atmosphere was cozy, the service was impeccable, and the food was absolutely delicious. I highly recommend trying their signature dish—it was a flavor explosion in every bite.",
   },
   {
-    img: "./review-profile-img/sasuke.jpg",
+    img: "../../img/anime-character-img/sasuke.jpg",
     name: "Sasuke",
     role: "Writer",
     review:
       "This book had me hooked from the first page. The characters were well-developed, and the plot was full of twists and turns that kept me guessing until the very end. A must-read for anyone who loves a gripping mystery.",
   },
   {
-    img: "./review-profile-img/kakashi.png",
+    img: "../../img/anime-character-img/kakashi.png",
     name: "Kakashi",
     role: "Software Engineer",
     review:
       "I recently purchased this laptop, and I couldn't be happier. It's lightning-fast, has excellent battery life, and the display is stunning. Whether I'm working or streaming movies, it delivers exceptional performance. Worth every penny.",
   },
   {
-    img: "./review-profile-img/jiraiya.jpg",
+    img: "../../img/anime-character-img/jiraiya.jpg",
     name: "Jiraiya",
     role: "Vlogger",
     review:
