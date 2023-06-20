@@ -1,7 +1,12 @@
+:root {
+  --default-width: 240px;
+  --default-height: 320px;
+}
+
 .photo-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-auto-rows: 320px;
+  grid-template-columns: repeat(auto-fit, minmax(var(--default-width), 1fr));
+  grid-auto-rows: var(--default-height);
   align-items: center;
   justify-items: center;
   row-gap: 10px;
@@ -9,8 +14,8 @@
 }
 
 .gallery-img {
-  height: 320px;
-  width: 240px;
+  height: var(--default-height);
+  width: var(--default-width);
   object-fit: cover;
   border-radius: 5px;
 }
@@ -25,18 +30,18 @@
 
 @media (min-width: 1000px) {
   .img-tall {
-    height: 650px;
+    height: calc(2 * var(--default-height));
     grid-row: span 2;
   }
 
   .img-wide {
-    width: 490px;
+    width: calc(2 * var(--default-width));
     grid-column: span 2;
   }
 
   .img-large {
-    height: 650px;
-    width: 490px;
+    height: calc(2 * var(--default-height));
+    width: calc(2 * var(--default-width));
     grid-column: span 2;
     grid-row: span 2;
   }
@@ -44,11 +49,14 @@
 
 @media (max-width: 600px) {
   .photo-container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-auto-rows: 160px;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(var(--default-width) / 2), 1fr)
+    );
+    grid-auto-rows: calc(var(--default-height) / 2);
   }
   .gallery-img {
-    height: 160px;
-    width: 120px;
+    height: calc(var(--default-height) / 2);
+    width: calc(var(--default-width) / 2);
   }
 }
