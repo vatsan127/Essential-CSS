@@ -9,6 +9,7 @@
 @import url("./components/sidebar/sidebar.css");
 @import url("./components/cards/card.css");
 @import url("./components/PhotoGallery/PhotoGallery.css");
+@import url("./components/menu/menu.css");
 
 :root {
   /* font size */
