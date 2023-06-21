@@ -35,8 +35,9 @@
   height: 250px;
 }
 .character-container:hover .character-details {
-  display: block;
+  visibility: visible;
   bottom: 0px;
+  opacity: 1;
 }
 
 .character-img {
@@ -60,10 +61,12 @@
 
 .character-details {
   font-size: 1.2rem;
-  display: none;
+  visibility: hidden;
   grid-area: des;
   position: absolute;
   margin: 0.5rem;
   bottom: 150px;
   z-index: -1;
+  opacity: 0;
+  transition: opacity 1s;
 }
