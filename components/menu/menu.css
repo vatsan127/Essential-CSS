@@ -1,3 +1,12 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+
 .character-container {
   width: 300px;
   height: 150px;
@@ -15,7 +24,7 @@
   cursor: pointer;
   overflow: hidden;
   box-shadow: 2px 2px 5px black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .character-container:hover {
   background-color: transparent;
@@ -40,13 +49,11 @@
 .character-name {
   grid-area: name;
   font-size: 2rem;
-  background-color: white;
   text-align: center;
 }
 
 .character-class {
   opacity: 60%;
-  background-color: white;
   font-size: 1.6rem;
   text-align: center;
 }
