@@ -121,3 +121,9 @@ const data = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga consectetur dolores non minima facere possimus nostrum sapiente reiciendis veritatis.",
   },
 ];
+
+function loadContent() {
+  data.map(item =>)
+}
+
+window.addEventListener("DOMContentLoaded", loadContent);
