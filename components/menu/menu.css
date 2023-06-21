@@ -1,0 +1,62 @@
+.character-container {
+  width: 300px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "img name"
+    "img class";
+
+  background-color: white;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px black;
+  transition: all 0.3s ease-in-out;
+}
+.character-container:hover {
+  background-color: transparent;
+  grid-template-areas:
+    "img name"
+    "img class"
+    "des des";
+  height: 250px;
+}
+.character-container:hover .character-details {
+  display: block;
+  bottom: 0px;
+}
+
+.character-img {
+  grid-area: img;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.character-name {
+  grid-area: name;
+  font-size: 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.character-class {
+  opacity: 60%;
+  background-color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.character-details {
+  font-size: 1.2rem;
+  display: none;
+  grid-area: des;
+  position: absolute;
+  margin: 0.5rem;
+  bottom: 150px;
+  z-index: -1;
+}
