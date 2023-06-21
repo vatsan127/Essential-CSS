@@ -67,14 +67,14 @@ const data = [
   {
     img: "../../img/anime-character-img/tsunade.png",
     name: "tsunade",
-    class: "Sanin Hokage",
+    class: "Sanin",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga consectetur dolores non minima facere possimus nostrum sapiente reiciendis veritatis.",
   },
   {
     img: "../../img/anime-character-img/orochimaru.png",
     name: "orochimaru",
-    class: "Sanin Hokage",
+    class: "Sanin",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga consectetur dolores non minima facere possimus nostrum sapiente reiciendis veritatis.",
   },
@@ -95,7 +95,7 @@ const data = [
   {
     img: "../../img/anime-character-img/hashirama.png",
     name: "hashirama",
-    class: "Founder Hokage",
+    class: "Hokage",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fuga consectetur dolores non minima facere possimus nostrum sapiente reiciendis veritatis.",
   },
