@@ -8,11 +8,10 @@
 }
 
 .menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--container-width), 1fr));
-  grid-auto-rows: auto;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: 1rem;
   background-color: var(--darkBlue);
   border-radius: 8px;
@@ -38,7 +37,6 @@
   transition: all 0.4s ease-in-out;
 }
 .character-container:hover {
-  /* background-color: transparent; */
   grid-template-areas:
     "img name"
     "img class"
@@ -47,6 +45,9 @@
   box-shadow: 4px 4px 5px black;
   color: white;
   background-color: black;
+}
+.character-container:hover .character-name {
+  color: gold;
 }
 .character-container:hover .character-des {
   visibility: visible;
@@ -65,6 +66,7 @@
 .character-name {
   grid-area: name;
   font-size: 2rem;
+  text-transform: capitalize;
   text-align: center;
 }
 
@@ -81,6 +83,72 @@
   position: absolute;
   margin: 0.5rem;
   bottom: 150px;
-  /* z-index: -1; */
   opacity: 0;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --container-width: 200px;
+    --container-height: 100px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .character-container {
+    width: var(--container-width);
+    height: var(--container-height);
+    padding: 5px;
+  }
+
+  .character-info {
+    margin-left: 5px;
+  }
+
+  .character-container:hover {
+    height: var(--container-height);
+  }
+
+  .character-container:hover .character-des {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.6s;
+  }
+
+  .character-container:hover .character-img {
+    opacity: 0;
+    visibility: none;
+    transition: opacity 0.6s;
+  }
+  .character-container:hover .character-info {
+    opacity: 0;
+    visibility: none;
+    transition: opacity 0.6s;
+  }
+
+  .character-img {
+    visibility: visible;
+    opacity: 1;
+    width: var(--container-height);
+    height: var(--container-height);
+  }
+
+  .character-name {
+    visibility: visible;
+    opacity: 1;
+    font-size: 1.4rem;
+  }
+
+  .character-class {
+    visibility: visible;
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+
+  .character-des {
+    font-size: 1rem;
+    visibility: none;
+    margin: 0.5rem;
+  }
 }
