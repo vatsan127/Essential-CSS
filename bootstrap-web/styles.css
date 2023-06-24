@@ -5,3 +5,9 @@
 .navbar {
   background-color: var(--darkBlue);
 }
+
+@media (min-width: 768px) {
+  .newsletter-input {
+    width: 50%;
+  }
+}
