@@ -11,10 +11,9 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <!-- Option 1: Include in HTML -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -66,7 +65,85 @@
             convenience, empowering learners to excel anytime, anywhere. Let's
             start learning!
           </p>
-          <button class="btn btn-success">Enroll Now</button>
+          <!-- <button class="btn btn-success">Enroll Now</button> -->
+          <!-- strt -->
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Enroll Now
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Enroll Now
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form class="text-start">
+                    <!-- email -->
+                    <div class="mb-3">
+                      <label for="input-email" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="input-email"
+                      />
+                    </div>
+
+                    <!-- password -->
+                    <div class="mb-3">
+                      <label for="input-password" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="input-password"
+                      />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
         </div>
 
         <img
@@ -96,50 +173,166 @@
       </div>
     </section>
 
+    <!-- course section -->
+    <section class="course-section py-2" id="course">
+      <div class="container text-center text-light">
+        <h3 class="course-section-title">
+          <strong>Master Frontend Skills</strong>
+        </h3>
+        <div class="row">
+          <!-- course  - 1 -->
+          <div class="col-md-4">
+            <div class="course bg-dark rounded p-3 m-1">
+              <i class="course-img bi bi-filetype-html"></i>
+              <p class="ms-3">
+                Hypertext Markup Language is the standard language for creating
+                web pages.
+              </p>
+
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+
+          <!-- course - 2 -->
+          <div class="col-md-4">
+            <div class="course bg-dark rounded p-3 m-1">
+              <i class="course-img bi bi-filetype-css"></i>
+              <p class="ms-3">
+                Cascading Style Sheets is used to style and format the HTML
+                elements.
+              </p>
+
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+
+          <!-- course - 3 -->
+          <div class="col-md-4">
+            <div class="course bg-dark rounded p-3 m-1">
+              <i class="course-img bi bi-filetype-js"></i>
+              <p class="ms-3">
+                Javascript adds interactivity and dynamic functionality to web
+                pages.
+              </p>
+
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
     <!--learning -->
-    <section class="learning bg-dark py-3" id="learning">
+    <section class="learning-section py-2" id="learning">
+      <div class="container text-center">
+        <h3 class="text-light"><strong>Learning</strong></h3>
+        <div class="row">
+          <!--  - 1 -->
+          <div class="col-md-4">
+            <div class="bg-light rounded p-3 m-1">
+              <i class="bi bi-laptop"></i>
+              <p class="ms-3">
+                Engage in real-time learning with expert instructors. Get
+                instant feedback and discussions.
+              </p>
+
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="col-md-4">
+            <div class="bg-light rounded p-3 m-1">
+              <i class="bi bi-cloud-arrow-down"></i>
+              <p class="ms-3">
+                Access pre-recorded lessons anytime, anywhere. Learn at your own
+                pace and review concepts.
+              </p>
+
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-md-4">
+            <div class="bg-light rounded p-3 m-1">
+              <i class="bi bi-question-circle"></i>
+              <p class="ms-3">
+                Interact with mentors and fellow learners to overcome obstacles
+                and deepen understanding.
+              </p>
+
+              <button class="btn btn-primary">Read more</button>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Q&A -->
+    <section class="questions bg-dark text-light p-2">
       <div class="container">
-        <div class="d-md-flex justify-content-around align-items-center">
-          <!-- card 1 -->
-          <div class="card m-3">
-            <div class="card-body text-center">
-              <div class="h1"><i class="bi bi-laptop"></i></div>
-              <h4 class="card-title fw-semibold">Live Sessions</h4>
-              <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                dolore!
-              </p>
-              <a href="" class="btn btn-primary">Read More</a>
+        <h3 class="text-center">Q &A</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                Is your platform dependable?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                We are one of the leading platforms and we only offer quality
+                courses
+              </div>
             </div>
           </div>
-
-          <!-- card 2 -->
-          <div class="card m-3">
-            <div class="card-body text-center">
-              <div class="h1">
-                <i class="bi bi-cloud-arrow-down"></i>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                What are the courses you offer?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                No , we have courses on various branches and platforms
               </div>
-              <h4 class="card-title fw-semibold">Offline Videos</h4>
-              <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                dolore!
-              </p>
-              <a href="" class="btn btn-primary">Read More</a>
             </div>
           </div>
-
-          <!-- card 3 -->
-          <div class="card m-3">
-            <div class="card-body text-center">
-              <div class="h1">
-                <i class="bi bi-question-circle"></i>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How many students are there in your institute?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                There are plenty of students enrolled in our E- Learning
+                platform
               </div>
-              <h4 class="card-title fw-semibold">Doubt Sessions</h4>
-              <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-                dolore!
-              </p>
-              <a href="" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>

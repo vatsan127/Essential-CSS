@@ -1,9 +1,32 @@
 :root {
-  --darkBlue: #2c3e50;
+  --darkBlue: #2d4356;
+}
+
+.bi {
+  font-size: 100px;
+  color: #001c30;
 }
 
 .navbar {
   background-color: var(--darkBlue);
+}
+
+.course-section {
+  background-color: var(--darkBlue);
+}
+.learning-section {
+  background-color: #001c30;
+}
+.course-section {
+  background-color: var(--darkBlue);
+}
+
+.course-section-title {
+  color: gold;
+}
+
+.course-img {
+  color: #64ccc5;
 }
 
 @media (min-width: 768px) {
