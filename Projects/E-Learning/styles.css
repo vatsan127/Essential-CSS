@@ -1,6 +1,10 @@
 /* Poppins font import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
 
+* {
+  transition: all 0.3s ease-in-out;
+}
+
 :root {
   /*  colors */
   --blue: #007bff;
@@ -53,13 +57,18 @@ body {
   text-decoration: none;
 }
 
-.nav-links:hover {
-  filter: brightness(0.8);
-}
-
-.toogle-btn {
+.toggle-btn {
   display: none;
 }
 
 .bars {
+}
+
+/* Hover properties */
+.nav-brand:hover {
+  color: var(--yellow);
+}
+
+.nav-links:hover {
+  filter: brightness(0.7);
 }
