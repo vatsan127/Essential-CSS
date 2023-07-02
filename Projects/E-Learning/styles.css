@@ -176,8 +176,7 @@ body {
 @media (min-width: 576px) {
   .showcase-image {
     display: block;
-    width: 500px;
-    height: 300px;
+    width: 400px;
   }
 
   .showcase-text > .text {
