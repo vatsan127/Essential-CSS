@@ -1,3 +1,6 @@
+/* Poppins font import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
+
 :root {
   /*  colors */
   --blue: #007bff;
@@ -6,4 +9,57 @@
   --red: #dc3545;
   --yellow: #ffc107;
   --darkBlue: #2c3e50;
+  --light: white;
+  --dark: black;
+
+  /* font family */
+  font-family: "Poppins", sans-serif;
+
+  /* font size */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: var(--darkBlue);
+}
+
+.nav-head {
+}
+
+.nav-brand {
+  font-size: 2.6rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  filter: brightness(0.8);
+}
+
+.toogle-btn {
+  display: none;
+}
+
+.bars {
 }
