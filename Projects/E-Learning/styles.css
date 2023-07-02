@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap");
 
 * {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 :root {
@@ -13,8 +13,6 @@
   --red: #dc3545;
   --yellow: #ffc107;
   --darkBlue: #2c3e50;
-  --light: white;
-  --dark: black;
 
   /* font family */
   font-family: "Poppins", sans-serif;
@@ -28,15 +26,20 @@ body {
   margin: 0;
 }
 
+.btn {
+  padding: 0.375rem 0.75rem;
+}
+.btn:hover {
+  filter: brightness(0.5);
+}
+
+/* -------------------------------------navbar----------------------------------------------- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  background-color: var(--darkBlue);
-}
-
-.nav-head {
+  background-color: black;
 }
 
 .nav-brand {
@@ -64,11 +67,62 @@ body {
 .bars {
 }
 
-/* Hover properties */
-.nav-brand:hover {
-  color: var(--yellow);
+/* navbar media queries */
+@media (max-width: 576px) {
+  .navbar {
+    position: relative;
+    padding: 10px 20px;
+    flex-direction: column;
+    height: 30px;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .nav-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    font-size: 2rem;
+  }
+
+  .nav-list {
+    margin: 0;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    z-index: -2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 3px solid white;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav-items {
+    margin-top: 10px;
+  }
+
+  .toggle-btn {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .bars {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 25px;
+  }
 }
 
+/* Hover properties */
 .nav-links:hover {
   filter: brightness(0.7);
 }
