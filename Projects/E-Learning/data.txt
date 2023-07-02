@@ -1,0 +1,11 @@
+HTML: Hypertext Markup Language is the standard language for creating web pages. It provides structure and semantics, allowing you to define the content and layout of a website.
+
+CSS: Cascading Style Sheets is used to style and format the HTML elements. It enables you to control the colors, fonts, spacing, and overall appearance of a web page, making it visually appealing.
+
+JavaScript: A programming language that adds interactivity and dynamic functionality to web pages. It allows you to manipulate the HTML and CSS elements, handle events, validate forms, create animations, and much more. JavaScript is essential for building interactive web applications.
+
+Live session: Engage in real-time learning with expert instructors and peers. Get instant feedback and interactive discussions.
+
+Offline videos: Access pre-recorded lessons anytime, anywhere. Learn at your own pace and review concepts whenever needed.
+
+Doubt session: Seek clarifications on challenging topics. Interact with mentors and fellow learners to overcome obstacles and deepen understanding.
